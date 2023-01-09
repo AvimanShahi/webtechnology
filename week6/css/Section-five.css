@@ -15,25 +15,22 @@ body{
 }
 
 .left-col{
-    margin: 0 0 0 0;
     width: 50%;
     height: 100vh;
     padding: 2%;
     background-image:  linear-gradient(to right, #353A3E, #233444);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 h1{
     font-size: 70px;
     color: #CA9C7B;
     text-transform: uppercase;
 }
-h2{
-    color: #714529;
-    width: 100%;
-}
-.date{
-    font-weight: 100;
-    margin-top: 200px;
-    font-size: 20px;
+.contact, .location{
+    font-weight: 500;
+    font-size: 30px;
     color: #714529;
 }
 .button{
@@ -55,8 +52,6 @@ h2{
     font-size: 20px;
 }
 .button:hover{
-    width: 42%;
-    height: 60px;
     transition: 1s;
     color: #233444;
     background-color: #CA9C7B;
@@ -95,7 +90,8 @@ figure{
     h2{
         font-size: 22px;
     }
-    p{
+    .location,
+    .contact p{
         font-size: 18px;
     }
   }
@@ -107,6 +103,8 @@ figure{
     h2{
         font-size: 16px;
     }
+    .location,
+    .contact
     p{
         font-size: 14px;
     }
